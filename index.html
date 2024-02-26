@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ludo</title>
+  <!-- <style>
+      table{
+        border-collapse: collapse;
+      }
+    </style> -->
+</head>
+
+<body>
+  <table border="1" style="width:30%; border-collapse: collapse;" >
+    <caption>Ludo board design</caption>
+    <tr style="height:20px"> <!-- first row-->
+      <td colspan="6" bgcolor="red" style="border: none;"></td>
+      <td style="width: 15px;"></td>
+      <td style="width: 20px; text-align: center; color: rgb(66, 66, 9);" >&#x21E9;</td>
+      <td style="width: 14px;"></td>
+      <td colspan="6" bgcolor="yellow"style="border: none;"></td>
+    
+    </tr>
+    <tr style="height:20px"> <!-- second row-->
+      <td rowspan="5" bgcolor="red" style="border: none;"></td>
+      <td rowspan="2" bgcolor="red" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" colspan="2" style="border: none;"></td>
+      <td rowspan="2" bgcolor="red" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" bgcolor="red" style="border: none;"></td>
+      <td></td>
+      <td bgcolor="yellow"></td>
+      <td bgcolor="yellow"></td>
+      <td rowspan="5" bgcolor="yellow" style="border: none;"></td>
+      <td rowspan="2" bgcolor="yellow" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" colspan="2" style="border: none;"></td>
+      <td rowspan="2" bgcolor="yellow" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" bgcolor="yellow" style="border: none;"></td>
+    </tr>
+    <tr style="height:20px"><!-- third row-->
+      <td style="color: red;text-align: center;">&#9733</td>
+      <td bgcolor="yellow"></td>
+      <td></td>
+    </tr>
+    <tr style="height:20px"><!-- fourth row-->
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td></td>
+      <td bgcolor="yellow"></td>
+      <td></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+    </tr>
+    <tr style="height:20px"><!-- 5 row-->
+      <td rowspan="2" bgcolor="red" style="border-radius: 20px; width: 38px;border: none;"> </td>
+      <td rowspan="2" bgcolor="red" style="border-radius: 20px; width: 38px;border: none;"></td>
+      <td></td>
+      <td bgcolor="yellow"></td>
+      <td></td>
+      <td rowspan="2" bgcolor="yellow" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="2" bgcolor="yellow" style="border-radius: 20px; width: 38px; border: none;"></td>
+    </tr>
+    <tr style="height:20px"><!-- 6 row-->
+      <td></td>
+      <td bgcolor="yellow"></td>
+      <td></td>    
+    </tr>
+    <tr style="height:20px"><!-- 7 row-->
+      <td></td>
+      <td bgcolor="red"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <th colspan="3" rowspan="3" style="width: 20%;"> Home
+      </th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td style="color: rgba(233, 236, 45, 0.61); text-align: center; width: 21px;" >&#9733</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="height:20px"><!-- 8 row-->
+      <td style=" width: 20px; text-align: center; color: red;">&#8680;</td>
+      <td bgcolor="red"></td>
+      <td bgcolor="red"></td>
+      <td bgcolor="red"></td>
+      <td bgcolor="red"></td>
+      <td bgcolor="red"></td>
+      <td bgcolor="green"></td>
+      <td bgcolor="green"></td>
+      <td bgcolor="green"></td>
+      <td bgcolor="green"></td>
+      <td bgcolor="green"></td>
+      <td style="width: 20px; color: green;" >&#8678;</td>
+    </tr>
+    <tr style="height:20px"><!-- 9 row-->
+      <td></td>
+      <td></td>
+      <td style="color: blue; text-align: center; width: 22px;">&#9733</td>
+      <td></td>
+      <td></td>
+      <td></td>     
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td bgcolor="green"></td>
+      <td></td>
+    </tr>
+    <tr style="height:20px"><!-- 10 row-->
+      <td rowspan="5" bgcolor="blue" style="border: none;"></td>
+      <td rowspan="2" bgcolor="blue" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" colspan="2" style="border: none;"></td>
+      <td rowspan="2" bgcolor="blue" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" bgcolor="blue" style="border: none;"></td>
+      <td></td>
+      <td bgcolor="blue"></td>
+      <td></td>
+      <td rowspan="5" bgcolor="green" style="border: none;"></td>
+      <td rowspan="2" bgcolor="green" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" colspan="2" style="border: none;"></td>
+      <td rowspan="2" bgcolor="green" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="5" bgcolor="green" style="border: none;"></td>
+    </tr>
+    <tr style="height:20px"><!-- 11 row-->
+      <td></td>
+      <td bgcolor="blue"></td>
+      <td></td>
+    </tr>
+    <tr style="height:20px"><!-- 12 row-->
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+      <td ></td>
+      <td bgcolor="blue"></td>
+      <td></td>
+      <td style="border: none;"></td>
+      <td style="border: none;"></td>
+
+
+    </tr>
+    <tr style="height:20px"><!-- 13 row-->
+      <td rowspan="2" bgcolor="blue" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="2" bgcolor="blue" style="border-radius: 20px; width: 38px; border: none; "></td>
+      <td></td>
+      <td bgcolor="blue"></td>
+      <td style="color: green; text-align: center;">&#9733</td>
+      <td rowspan="2" bgcolor="green" style="border-radius: 20px; width: 38px; border: none;"></td>
+      <td rowspan="2" bgcolor="green" style="border-radius: 20px; width: 38px; border: none;"></td>
+
+
+    </tr>
+    <tr style="height:20px"><!-- 14 row-->
+      <td bgcolor="blue"></td>
+      <td bgcolor="blue"></td>
+      <td></td>
+    </tr>
+    <tr style="height:20px"><!-- 15 row-->
+      <td colspan="6" bgcolor="blue" style="border: none;"></td>
+      <td></td>
+      <td style="text-align: center;"> &#8679;</td>
+      <td></td>
+      <td colspan="6" bgcolor="green" style="border: none;"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,3 +1,30 @@
+#dice{
+   background-color: black;
+   border-radius: 17px;
+   color: white;
+   width: 37%;
+   padding: 4px;
+   margin-left: 62px;
+   margin-bottom: 13px;
+   font-size: 20px;
+   font-style: normal;
+}
 #dice:hover{
     background-color: rgb(88, 94, 82);
 }
+
+#diceRoll{
+  background-color: rgb(236, 228, 212);
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  width: 14%;
+  margin: 13px 26px 0px 95px;
+  text-align: center;
+}
+#outPut{
+    font-size: x-large;
+}
+
+
+

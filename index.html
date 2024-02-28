@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ludo</title>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="main.js" async></script>
+  <script type="module" src="main.js" async ></script> 
+  <!-- async attribute in a script tag, it tells the browser to download the script file in the background, but it doesn't wait for the script to be downloaded before moving on to parse and render the rest of the HTML. -->
   <!-- <style>
       table{
         border-collapse: collapse;
@@ -166,26 +167,10 @@
       <td colspan="6" bgcolor="green" style="border: none;"></td>
     </tr>
   </table>
-  <div id="diceRoll" style="
-  background-color: rgb(236, 228, 212);
-  border-radius: 26px;
-  display: flex;
-  flex-direction: column;
-  width: 14%;
-  margin: 13px 26px 0px 95px;
-  text-align: center;">
+  <div id="diceRoll">
    <p><span id="player" ></span> Player turn. </p>
-   <span id="outPut" style="font-size: x-large;"></span> 
-   <button id="dice" style="background-color: black;
-   border-radius: 17px;
-   color: white;
-   width: 37%;
-   padding: 4px;
-   margin-left: 62px;
-   margin-bottom: 13px;
-   font-size: 20px;
-   font-style: normal;
-    ">Dice</button>
+   <span id="outPut" ></span> 
+   <button id="dice">Dice</button>
   </div>
 </body>
 

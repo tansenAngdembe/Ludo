@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ludo</title>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="main.js" async ></script> 
+  <script type="module" src="main.js" async></script>
   <!-- async attribute in a script tag, it tells the browser to download the script file in the background, but it doesn't wait for the script to be downloaded before moving on to parse and render the rest of the HTML. -->
   <!-- <style>
       table{
@@ -16,14 +16,14 @@
 </head>
 
 <body>
-  <table border="1" style="width:30%; border-collapse: collapse;" id="tableId" >   
+  <table border="1" style="width:30%; border-collapse: collapse;" id="tableId">
     <tr style="height:20px"> <!-- first row-->
       <td colspan="6" bgcolor="red" style="border: none;"></td>
       <td style="width: 15px;"></td>
-      <td style="width: 20px; text-align: center; color: rgb(66, 66, 9);" >&#x21E9;</td>
+      <td style="width: 20px; text-align: center; color: rgb(66, 66, 9);">&#x21E9;</td>
       <td style="width: 14px;"></td>
-      <td colspan="6" bgcolor="yellow"style="border: none;"></td>
-    
+      <td colspan="6" bgcolor="yellow" style="border: none;"></td>
+
     </tr>
     <tr style="height:20px"> <!-- second row-->
       <td rowspan="5" bgcolor="red" style="border: none;"></td>
@@ -66,7 +66,7 @@
     <tr style="height:20px"><!-- 6 row-->
       <td></td>
       <td bgcolor="yellow"></td>
-      <td></td>    
+      <td></td>
     </tr>
     <tr style="height:20px"><!-- 7 row-->
       <td></td>
@@ -80,7 +80,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td style="color: rgba(233, 236, 45, 0.61); text-align: center; width: 21px;" >&#9733</td>
+      <td style="color: rgba(233, 236, 45, 0.61); text-align: center; width: 21px;">&#9733</td>
       <td></td>
       <td></td>
     </tr>
@@ -96,7 +96,7 @@
       <td bgcolor="green"></td>
       <td bgcolor="green"></td>
       <td bgcolor="green"></td>
-      <td style="width: 20px; color: green;" >&#8678;</td>
+      <td style="width: 20px; color: green;">&#8678;</td>
     </tr>
     <tr style="height:20px"><!-- 9 row-->
       <td></td>
@@ -104,7 +104,7 @@
       <td style="color: blue; text-align: center; width: 22px;">&#9733</td>
       <td></td>
       <td></td>
-      <td></td>     
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -135,7 +135,7 @@
     <tr style="height:20px"><!-- 12 row-->
       <td style="border: none;"></td>
       <td style="border: none;"></td>
-      <td ></td>
+      <td></td>
       <td bgcolor="blue"></td>
       <td></td>
       <td style="border: none;"></td>
@@ -167,10 +167,16 @@
       <td colspan="6" bgcolor="green" style="border: none;"></td>
     </tr>
   </table>
-  <div id="diceRoll">
-   <p><span id="player" ></span> Player turn. </p>
-   <span id="outPut" ></span> 
-   <button id="dice">Dice</button>
+  <div id="diceBox">
+    <div id="diceRoll">
+      <p><span id="player"></span> Player turn. </p>
+      <span id="outPut"></span>
+      <button id="dice">Dice</button>
+    </div>
+    <div id="playerTurn">
+      <p id="color">  </p>     
+      <span id="point"></span>     
+    </div>
   </div>
 </body>
 
